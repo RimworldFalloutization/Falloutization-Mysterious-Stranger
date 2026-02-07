@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Patch incident text -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/IncidentDef[defName='StrangerInBlackJoin']/label</xpath>
+    <value><label>Mysterious Stranger</label></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/IncidentDef[defName='StrangerInBlackJoin']/letterLabel</xpath>
+    <value><letterLabel>Mysterious Stranger</letterLabel></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/IncidentDef[defName='StrangerInBlackJoin']/letterText</xpath>
+    <value><letterText>Sensing trouble, a [PAWN_kind] has arrived.\n\nWill [PAWN_pronoun] be able to set things right in these parts?</letterText></value>
+  </Operation>
+
+  <!-- Patch backstory -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName='StrangerInBlack']/backstoryFiltersOverride</xpath>
+    <value><backstoryFiltersOverride><li><categoriesChildhood><li MayRequire="Rick.FCP.NCR">FCP_Backstory_NCR_Child</li><li>FCP_Backstory_Wastelander_Child</li></categoriesChildhood><categoriesAdulthood><li>FCP_Backstory_Unique_Mysterious_Stranger</li></categoriesAdulthood></li></backstoryFiltersOverride></value>
+  </Operation>
+
+  <!-- Patch pawn kind labels -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName='StrangerInBlack']/label</xpath>
+    <value><label>mysterious stranger</label></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName='StrangerInBlack']/labelMale</xpath>
+    <value><labelMale>mysterious stranger</labelMale></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName='StrangerInBlack']/labelFemale</xpath>
+    <value><labelFemale>mysterious stranger</labelFemale></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName='StrangerInBlack']/labelPlural</xpath>
+    <value><labelPlural>mysterious strangers</labelPlural></value>
+  </Operation>
+
+  <!-- Patch apparel color -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName='StrangerInBlack']/apparelColor</xpath>
+    <value><apparelColor>(0.82, 0.71, 0.55)</apparelColor></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName='StrangerInBlack']/favoriteColor</xpath>
+    <value><favoriteColor MayRequire="Ludeon.RimWorld.Ideology">DarkOrange</favoriteColor></value>
+  </Operation>
+
+  <!-- Replace revolver with FCP .44 Magnum Revolver -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName='StrangerInBlack']/weaponMoney</xpath>
+    <value><weaponMoney>520~520</weaponMoney></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName='StrangerInBlack']/weaponTags</xpath>
+    <value><weaponTags><li>FCP_44Magnum_Revolver</li></weaponTags></value>
+  </Operation>
+</Patch>

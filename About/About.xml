@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <packageId>Falloutization.MysteriousStranger</packageId>
+    <author>Canenald</author>
+    <name>Falloutization: Mysterious Stranger</name>
+    <description>A mod that replaces the Stranger in Black with Mysterious Stranger from Fallout.</description>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>Rick.FCP.Core.Tools</packageId>
+            <displayName>FCP - Tools</displayName>
+            <downloadUrl>https://github.com/FalloutCollaborationProject/FCP-Tools</downloadUrl>
+        </li>
+        <li>
+            <packageId>Rick.FCP.BallisticWeapons</packageId>
+            <displayName>FCP - Ballistic Weapons</displayName>
+            <downloadUrl>https://github.com/FalloutCollaborationProject/FCP-Ballistic-Weapons</downloadUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Odyssey</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+		<li>Rick.FCP.Core.Tools</li>
+		<li>Rick.FCP.NCR</li>
+		<li>Rick.FCP.BallisticWeapons</li>
+        <li>vanillaexpanded.achievements</li>
+    </loadAfter>
+    <modVersion>1.0</modVersion>
+</ModMetaData>
