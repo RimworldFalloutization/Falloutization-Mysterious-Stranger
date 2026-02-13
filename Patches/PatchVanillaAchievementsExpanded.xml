@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch MayRequire="vanillaexpanded.achievements">
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/AchievementsExpanded.AchievementDef[defName='showMustGoOn']/description</xpath>
-        <value><description>Have a Mysterious Stranger join your colony</description></value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
+Vanilla Achievements Expanded
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>FCP - Great Khans</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+    <operations>
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/AchievementsExpanded.AchievementDef[defName='showMustGoOn']/description</xpath>
+      <value><description>Have a Mysterious Stranger join your colony</description></value>
+    </li>
+    <li Class="PatchOperationReplace">
         <xpath>Defs/AchievementsExpanded.Reward_MapIncident[defName='ManInBlackReward']/label</xpath>
         <value><label>Mysterious Stranger Joins</label></value>
+    </li>
+    </operations>
+    </match>
     </Operation>  
 </Patch>
